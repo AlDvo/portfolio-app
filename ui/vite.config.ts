@@ -5,6 +5,8 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // Публикация на GitHub Pages по адресу https://AlDvo.github.io/portfolio-app/.
+  base: '/portfolio-app/',
   resolve: {
     alias: {
       // SheetJS xlsx: ESM-обёртка (xlsx.mjs) не имеет default-экспорта —

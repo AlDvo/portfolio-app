@@ -118,7 +118,7 @@ function App() {
 
   const handleLoadDemo = async () => {
     try {
-      const r = await fetch('/portfolio.json');
+      const r = await fetch(`${import.meta.env.BASE_URL}portfolio.json`);
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const d: Report = await r.json();
       addReport('Демо-данные', d);
