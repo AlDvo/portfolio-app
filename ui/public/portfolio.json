@@ -1,0 +1,2928 @@
+{
+  "generatedAt": "2026-09-13T16:56:46.295Z",
+  "meta": {
+    "reportPeriodStart": "15.05.2026",
+    "reportPeriodEnd": "12.09.2026",
+    "client": "Дворененко Алексей Георгиевич",
+    "agreement": "№ 12248016 от 14.12.2025",
+    "accountType": "regular"
+  },
+  "portfolio": {
+    "totalValue": 618037.3737499999,
+    "totalCost": 645629.9482000001,
+    "pnlTotal": -27592.57445000019,
+    "pnlPercentTotal": -4.273744507504274,
+    "positions": [
+      {
+        "isin": "RU0007775219",
+        "name": "Мобильные ТелеСистемы ПАО ао",
+        "securityType": "share",
+        "quantity": 500,
+        "avgPriceNet": 212.3,
+        "currency": "RUB",
+        "lastPrice": 193.15,
+        "accruedInt": 0,
+        "marketValueFull": 96575,
+        "costBasis": 106468.46,
+        "pnl": -9893.460000000006,
+        "pnlPercent": -9.29238574503661,
+        "weight": 15.626077661618115,
+        "couponYieldCurrent": 0,
+        "couponYieldSimpleToMaturity": 0,
+        "ytmMarket": 0,
+        "ytmFromPurchase": 0,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0,
+        "durationModified": 0,
+        "dv01": 0,
+        "gSpread": null,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 0,
+          "amortization": 0,
+          "face": 0,
+          "total": 0
+        },
+        "incomeNext12m": 0,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A0JR4A1",
+        "name": "ПАО Московская Биржа",
+        "securityType": "share",
+        "quantity": 550,
+        "avgPriceNet": 168.79,
+        "currency": "RUB",
+        "lastPrice": 151.52,
+        "accruedInt": 0,
+        "marketValueFull": 83336,
+        "costBasis": 92834.5,
+        "pnl": -9498.5,
+        "pnlPercent": -10.231648794359856,
+        "weight": 13.483974196309678,
+        "couponYieldCurrent": 0,
+        "couponYieldSimpleToMaturity": 0,
+        "ytmMarket": 0,
+        "ytmFromPurchase": 0,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0,
+        "durationModified": 0,
+        "dv01": 0,
+        "gSpread": null,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 0,
+          "amortization": 0,
+          "face": 0,
+          "total": 0
+        },
+        "incomeNext12m": 0,
+        "status": "ok"
+      },
+      {
+        "isin": "RU0009029540",
+        "name": "Сбербанк России ПАО ао",
+        "securityType": "share",
+        "quantity": 322,
+        "avgPriceNet": 315.1842857142857,
+        "currency": "RUB",
+        "lastPrice": 283.32,
+        "accruedInt": 0,
+        "marketValueFull": 91229.04,
+        "costBasis": 101791.14,
+        "pnl": -10562.100000000006,
+        "pnlPercent": -10.376246891428867,
+        "weight": 14.761087900956413,
+        "couponYieldCurrent": 0,
+        "couponYieldSimpleToMaturity": 0,
+        "ytmMarket": 0,
+        "ytmFromPurchase": 0,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0,
+        "durationModified": 0,
+        "dv01": 0,
+        "gSpread": null,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 0,
+          "amortization": 0,
+          "face": 0,
+          "total": 0
+        },
+        "incomeNext12m": 0,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "securityType": "bond",
+        "quantity": 55,
+        "avgPriceNet": 98.94454545454545,
+        "currency": "RUB",
+        "lastPrice": 98.81,
+        "accruedInt": 5.38,
+        "marketValueFull": 39560.52375000001,
+        "costBasis": 39625.938749999994,
+        "pnl": -65.41499999998632,
+        "pnlPercent": -0.16508126258582664,
+        "weight": 6.4009921455012995,
+        "couponYieldCurrent": 9.726362634417852,
+        "couponYieldSimpleToMaturity": 10.028204231332271,
+        "ytmMarket": 21.193713561392364,
+        "ytmFromPurchase": 20.794169528339264,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0.5001730181243309,
+        "durationModified": 0.41270541468387406,
+        "dv01": 1.6326842359355003,
+        "gSpread": 7.744573678254715,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 3891.250000000001,
+          "amortization": 39737.5,
+          "face": 0,
+          "total": 43628.75
+        },
+        "incomeNext12m": 40477.8,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "securityType": "bond",
+        "quantity": 30,
+        "avgPriceNet": 99.95,
+        "currency": "RUB",
+        "lastPrice": 99.54,
+        "accruedInt": 0,
+        "marketValueFull": 29862,
+        "costBasis": 30200.7,
+        "pnl": -338.7000000000007,
+        "pnlPercent": -1.121497183840112,
+        "weight": 4.831746633510123,
+        "couponYieldCurrent": 18.780389793048016,
+        "couponYieldSimpleToMaturity": 14.111797600755182,
+        "ytmMarket": 20.35699724156602,
+        "ytmFromPurchase": 19.521853478810318,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 1.618195196593422,
+        "durationModified": 1.3444961520148064,
+        "dv01": 4.0149344091466155,
+        "gSpread": 5.702105961416189,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 10602.599999999993,
+          "amortization": 30000,
+          "face": 0,
+          "total": 40602.6
+        },
+        "incomeNext12m": 5608.199999999999,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "securityType": "bond",
+        "quantity": 50,
+        "avgPriceNet": 99.9192,
+        "currency": "RUB",
+        "lastPrice": 100.01,
+        "accruedInt": 2.73,
+        "marketValueFull": 12737.76,
+        "costBasis": 12623.4792,
+        "pnl": 114.28080000000045,
+        "pnlPercent": 0.9053035077682899,
+        "weight": 2.0610015738550636,
+        "couponYieldCurrent": 2.9283013653892054,
+        "couponYieldSimpleToMaturity": 9.870269335074568,
+        "ytmMarket": 19.29345742010628,
+        "ytmFromPurchase": 30.186750026303343,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0.10333175268912458,
+        "durationModified": 0.08661979870801242,
+        "dv01": 0.11033422071909724,
+        "gSpread": 5.734480405437036,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 373.00000000000006,
+          "amortization": 12600,
+          "face": 0,
+          "total": 12972.999999999998
+        },
+        "incomeNext12m": 12972.999999999998,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "securityType": "bond",
+        "quantity": 60,
+        "avgPriceNet": 99.71,
+        "currency": "RUB",
+        "lastPrice": 100.42,
+        "accruedInt": 9.49,
+        "marketValueFull": 45758.4,
+        "costBasis": 45004.104,
+        "pnl": 754.2960000000021,
+        "pnlPercent": 1.6760604766178706,
+        "weight": 7.40382409600193,
+        "couponYieldCurrent": 7.017727892583657,
+        "couponYieldSimpleToMaturity": 10.01833324752988,
+        "ytmMarket": 21.168212590586332,
+        "ytmFromPurchase": 30.430357068430027,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0.26787835180259556,
+        "durationModified": 0.22107972551161267,
+        "dv01": 1.0116254511850578,
+        "gSpread": 7.695034874026257,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 3211.2000000000003,
+          "amortization": 45000,
+          "face": 0,
+          "total": 48211.2
+        },
+        "incomeNext12m": 48211.2,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "securityType": "bond",
+        "quantity": 70,
+        "avgPriceNet": 99.68457142857145,
+        "currency": "RUB",
+        "lastPrice": 100.58,
+        "accruedInt": 3.21,
+        "marketValueFull": 70630.7,
+        "costBasis": 70710.08000000002,
+        "pnl": -79.38000000001921,
+        "pnlPercent": -0.11226122216241191,
+        "weight": 11.428224732016055,
+        "couponYieldCurrent": 19.064231276201426,
+        "couponYieldSimpleToMaturity": 19.148457651207416,
+        "ytmMarket": 21.051550848408347,
+        "ytmFromPurchase": 20.99582617094029,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 2.4391997693888117,
+        "durationModified": 2.0150091033888504,
+        "dv01": 14.232150347872688,
+        "gSpread": 6.385089458959625,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 44883.999999999956,
+          "amortization": 70000,
+          "face": 0,
+          "total": 114883.99999999996
+        },
+        "incomeNext12m": 13465.2,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "securityType": "bond",
+        "quantity": 30,
+        "avgPriceNet": 99.25,
+        "currency": "RUB",
+        "lastPrice": 99.75,
+        "accruedInt": 10.07,
+        "marketValueFull": 30227.100000000002,
+        "costBasis": 30019.5,
+        "pnl": 207.60000000000218,
+        "pnlPercent": 0.6915504921800902,
+        "weight": 4.89082073088788,
+        "couponYieldCurrent": 17.126353503974904,
+        "couponYieldSimpleToMaturity": 17.412168898674903,
+        "ytmMarket": 19.055092377486293,
+        "ytmFromPurchase": 19.30594846291451,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 3.2773769787338902,
+        "durationModified": 2.75282385094655,
+        "dv01": 8.320988182494647,
+        "gSpread": 3.837490775688803,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 25883.999999999996,
+          "amortization": 30000,
+          "face": 0,
+          "total": 55883.99999999999
+        },
+        "incomeNext12m": 5176.799999999999,
+        "status": "float_assumption"
+      },
+      {
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "securityType": "bond",
+        "quantity": 34,
+        "avgPriceNet": 97.99375,
+        "currency": "RUB",
+        "lastPrice": 98.63,
+        "accruedInt": 20.7,
+        "marketValueFull": 34238,
+        "costBasis": 33720.286250000005,
+        "pnl": 517.7137499999953,
+        "pnlPercent": 1.5353183723343846,
+        "weight": 5.539794428977282,
+        "couponYieldCurrent": 16.32969215491559,
+        "couponYieldSimpleToMaturity": 16.5717026869699,
+        "ytmMarket": 17.92107038160343,
+        "ytmFromPurchase": 18.350676639996323,
+        "ytpFromPurchase": 20.662357514391445,
+        "durationMacaulay": 4.201749196542959,
+        "durationModified": 3.5631878026087387,
+        "dv01": 12.1996423985718,
+        "gSpread": 2.0824400567398786,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 40534.45999999999,
+          "amortization": 34000,
+          "face": 0,
+          "total": 74534.45999999999
+        },
+        "incomeNext12m": 5590.96,
+        "status": "float_assumption"
+      },
+      {
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "securityType": "bond",
+        "quantity": 10,
+        "avgPriceNet": 100,
+        "currency": "RUB",
+        "lastPrice": 100.24,
+        "accruedInt": 16.92,
+        "marketValueFull": 10193.199999999999,
+        "costBasis": 10000,
+        "pnl": 193.1999999999989,
+        "pnlPercent": 1.9319999999999888,
+        "weight": 1.6492853722019751,
+        "couponYieldCurrent": 16.773535298041832,
+        "couponYieldSimpleToMaturity": 15.909522006093072,
+        "ytmMarket": 17.439770402118594,
+        "ytmFromPurchase": 17.971621527761865,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 4.250744248167492,
+        "durationModified": 3.619510012334637,
+        "dv01": 3.6894389457729417,
+        "gSpread": 1.6150299365505436,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 12012.844999999994,
+          "amortization": 10000,
+          "face": 0,
+          "total": 22012.844999999994
+        },
+        "incomeNext12m": 1709.76,
+        "status": "float_assumption"
+      },
+      {
+        "isin": "RU000A109T66",
+        "name": "БПИФ Альфа Обл с перем купоном",
+        "securityType": "etf",
+        "quantity": 7,
+        "avgPriceNet": 140.32285714285715,
+        "currency": "RUB",
+        "lastPrice": 140.75,
+        "accruedInt": 0,
+        "marketValueFull": 985.25,
+        "costBasis": 982.26,
+        "pnl": 2.990000000000009,
+        "pnlPercent": 0.30440005701138284,
+        "weight": 0.15941592561334972,
+        "couponYieldCurrent": 0,
+        "couponYieldSimpleToMaturity": 0,
+        "ytmMarket": 0,
+        "ytmFromPurchase": 0,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0,
+        "durationModified": 0,
+        "dv01": 0,
+        "gSpread": null,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 0,
+          "amortization": 0,
+          "face": 0,
+          "total": 0
+        },
+        "incomeNext12m": 0,
+        "status": "ok"
+      },
+      {
+        "isin": "RU000A10AFG4",
+        "name": "БПИФ АТОН – Флоатеры",
+        "securityType": "etf",
+        "quantity": 516,
+        "avgPriceNet": 138.85562015503876,
+        "currency": "RUB",
+        "lastPrice": 140.9,
+        "accruedInt": 0,
+        "marketValueFull": 72704.40000000001,
+        "costBasis": 71649.5,
+        "pnl": 1054.9000000000087,
+        "pnlPercent": 1.4723061570562372,
+        "weight": 11.763754602550849,
+        "couponYieldCurrent": 0,
+        "couponYieldSimpleToMaturity": 0,
+        "ytmMarket": 0,
+        "ytmFromPurchase": 0,
+        "ytpFromPurchase": null,
+        "durationMacaulay": 0,
+        "durationModified": 0,
+        "dv01": 0,
+        "gSpread": null,
+        "dividendYieldTtm": 0,
+        "dividendIncomeYear": 0,
+        "cashFlowToMaturity": {
+          "coupons": 0,
+          "amortization": 0,
+          "face": 0,
+          "total": 0
+        },
+        "incomeNext12m": 0,
+        "status": "ok"
+      }
+    ],
+    "weightsByType": {
+      "bonds": 44.20568971295161,
+      "shares": 43.871139758884205,
+      "etf": 11.9231705281642
+    },
+    "weightedDuration": 0.8740890735652913,
+    "portfolioDv01": 45.21179819169834,
+    "avgYtmBonds": 20.185847573977053,
+    "couponIncome12m": 133212.92,
+    "dividendIncome12m": 0,
+    "totalIncome12m": 133212.92,
+    "totalIncome12mPercent": 21.554185176815132,
+    "cashFlowCalendar": [
+      {
+        "date": "2026-09-14",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-09-22",
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "type": "coupon",
+        "amount": 186.5
+      },
+      {
+        "date": "2026-09-22",
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "type": "amortization",
+        "amount": 4200
+      },
+      {
+        "date": "2026-09-23",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 802.8000000000001
+      },
+      {
+        "date": "2026-09-23",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "amortization",
+        "amount": 15000
+      },
+      {
+        "date": "2026-09-23",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-09-28",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 555.5
+      },
+      {
+        "date": "2026-09-28",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2026-10-08",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2026-10-14",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-10-22",
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "type": "coupon",
+        "amount": 124.50000000000001
+      },
+      {
+        "date": "2026-10-22",
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "type": "amortization",
+        "amount": 4200
+      },
+      {
+        "date": "2026-10-23",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-10-24",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 535.2
+      },
+      {
+        "date": "2026-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 356.2
+      },
+      {
+        "date": "2026-10-28",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 512.6
+      },
+      {
+        "date": "2026-10-28",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2026-10-28",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2026-11-07",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2026-11-13",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-11-21",
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "type": "coupon",
+        "amount": 62
+      },
+      {
+        "date": "2026-11-21",
+        "isin": "RU000A107C34",
+        "name": "АйДи Коллект 06",
+        "type": "maturity",
+        "amount": 4200
+      },
+      {
+        "date": "2026-11-22",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-11-24",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 535.2
+      },
+      {
+        "date": "2026-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2026-11-27",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 469.69999999999993
+      },
+      {
+        "date": "2026-11-27",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2026-12-07",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2026-12-13",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-12-22",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2026-12-25",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 535.2
+      },
+      {
+        "date": "2026-12-25",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "amortization",
+        "amount": 15000
+      },
+      {
+        "date": "2026-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2026-12-27",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 427.34999999999997
+      },
+      {
+        "date": "2026-12-27",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-01-06",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-01-12",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-01-21",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-01-25",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 267.6
+      },
+      {
+        "date": "2027-01-26",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 384.45
+      },
+      {
+        "date": "2027-01-26",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-01-27",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2027-02-05",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-02-11",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-02-20",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-02-25",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 342.09999999999997
+      },
+      {
+        "date": "2027-02-25",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-02-25",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 267.6
+      },
+      {
+        "date": "2027-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-03-07",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-03-13",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-03-22",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 124.66999999999999
+      },
+      {
+        "date": "2027-03-27",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 299.20000000000005
+      },
+      {
+        "date": "2027-03-27",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-03-28",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "coupon",
+        "amount": 267.6
+      },
+      {
+        "date": "2027-03-28",
+        "isin": "RU000A107UU5",
+        "name": "Брусника 002Р-02",
+        "type": "maturity",
+        "amount": 15000
+      },
+      {
+        "date": "2027-04-06",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-04-12",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-04-21",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-04-26",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 256.85
+      },
+      {
+        "date": "2027-04-26",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-04-28",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2027-05-06",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-05-12",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-05-21",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-05-26",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 213.95000000000002
+      },
+      {
+        "date": "2027-05-26",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2027-06-05",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-06-11",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-06-20",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-06-25",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 171.6
+      },
+      {
+        "date": "2027-06-25",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-07-05",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-07-11",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-07-20",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-07-25",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 128.7
+      },
+      {
+        "date": "2027-07-25",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2027-07-28",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2027-08-04",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-08-10",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-08-19",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-08-24",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 85.8
+      },
+      {
+        "date": "2027-08-24",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "amortization",
+        "amount": 3052.5
+      },
+      {
+        "date": "2027-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-09-03",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-09-09",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-09-18",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-09-23",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "coupon",
+        "amount": 43.45
+      },
+      {
+        "date": "2027-09-23",
+        "isin": "RU000A1089A3",
+        "name": "А Спэйс 001Р-01",
+        "type": "maturity",
+        "amount": 3107.5
+      },
+      {
+        "date": "2027-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-10-03",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-10-09",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-10-18",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2027-10-27",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2027-11-02",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-11-08",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-11-17",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2027-12-02",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2027-12-08",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-12-17",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2027-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2028-01-01",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-01-07",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-01-07",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "amortization",
+        "amount": 4950
+      },
+      {
+        "date": "2028-01-16",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-01-26",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2028-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-01-31",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-02-06",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 360.3
+      },
+      {
+        "date": "2028-02-15",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-03-01",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-03-07",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 360.3
+      },
+      {
+        "date": "2028-03-16",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 129.12249999999997
+      },
+      {
+        "date": "2028-03-31",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-04-06",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 360.3
+      },
+      {
+        "date": "2028-04-06",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "amortization",
+        "amount": 4950
+      },
+      {
+        "date": "2028-04-15",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-04-26",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2028-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-04-30",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-05-06",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 289.20000000000005
+      },
+      {
+        "date": "2028-05-15",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2028-05-30",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-06-05",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 289.20000000000005
+      },
+      {
+        "date": "2028-06-14",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-06-29",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-07-05",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 289.20000000000005
+      },
+      {
+        "date": "2028-07-05",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "amortization",
+        "amount": 4950
+      },
+      {
+        "date": "2028-07-14",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-07-26",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2028-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2028-07-29",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-08-04",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 217.79999999999998
+      },
+      {
+        "date": "2028-08-13",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-08-28",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-09-03",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 217.79999999999998
+      },
+      {
+        "date": "2028-09-12",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-09-27",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-10-03",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 217.79999999999998
+      },
+      {
+        "date": "2028-10-03",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "amortization",
+        "amount": 4950
+      },
+      {
+        "date": "2028-10-12",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-10-25",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2028-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2028-10-27",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-11-02",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 146.7
+      },
+      {
+        "date": "2028-11-11",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-11-26",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2028-12-02",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 146.7
+      },
+      {
+        "date": "2028-12-11",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2028-12-26",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2028-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2029-01-01",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 146.7
+      },
+      {
+        "date": "2029-01-01",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "amortization",
+        "amount": 4950
+      },
+      {
+        "date": "2029-01-10",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-01-24",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2029-01-25",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-01-31",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 75.6
+      },
+      {
+        "date": "2029-02-09",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-02-24",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-03-02",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 75.6
+      },
+      {
+        "date": "2029-03-11",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-03-26",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 124.66999999999999
+      },
+      {
+        "date": "2029-04-01",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "coupon",
+        "amount": 75.6
+      },
+      {
+        "date": "2029-04-01",
+        "isin": "RU000A10EW51",
+        "name": "АБЗ-1 002P-06",
+        "type": "maturity",
+        "amount": 5250
+      },
+      {
+        "date": "2029-04-10",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-04-25",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-04-25",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2029-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-05-10",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-05-25",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2029-06-09",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-06-24",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-07-09",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-07-24",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-07-25",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2029-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2029-08-08",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-08-23",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-09-07",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-09-22",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-10-07",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-10-22",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-10-24",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2029-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2029-11-06",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-11-21",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2029-12-06",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2029-12-21",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "coupon",
+        "amount": 1122.1000000000001
+      },
+      {
+        "date": "2029-12-21",
+        "isin": "RU000A10FMQ8",
+        "name": "ГЛОРАКС 002Р-01",
+        "type": "maturity",
+        "amount": 70000
+      },
+      {
+        "date": "2029-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2030-01-05",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-01-23",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2030-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-02-04",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-03-06",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 124.66999999999999
+      },
+      {
+        "date": "2030-04-05",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-04-24",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2030-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-05-05",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2030-06-04",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-07-04",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-07-24",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2030-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2030-08-03",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-09-02",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-10-02",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-10-23",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2030-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2030-11-01",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2030-12-01",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2030-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2030-12-31",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-01-22",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2031-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-01-30",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-03-01",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 124.66999999999999
+      },
+      {
+        "date": "2031-03-31",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-04-23",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2031-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-04-30",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2031-05-30",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-06-29",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-07-23",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2031-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2031-07-29",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "coupon",
+        "amount": 431.40000000000003
+      },
+      {
+        "date": "2031-07-29",
+        "isin": "RU000A10FXF8",
+        "name": "ГТЛК БО 002P-14",
+        "type": "maturity",
+        "amount": 30000
+      },
+      {
+        "date": "2031-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-10-22",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2031-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2031-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2031-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2032-01-21",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2032-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 129.12249999999997
+      },
+      {
+        "date": "2032-04-21",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2032-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2032-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-07-21",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2032-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2032-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-10-20",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2032-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2032-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2032-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2033-01-19",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2033-01-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-02-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-03-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 124.66999999999999
+      },
+      {
+        "date": "2033-04-20",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2033-04-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-05-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2033-06-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-07-20",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2033-07-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2033-08-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-09-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-10-19",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "coupon",
+        "amount": 1397.74
+      },
+      {
+        "date": "2033-10-19",
+        "isin": "RU000A1075J3",
+        "name": "РЕСО-Лизинг ООО БО-02П-05",
+        "type": "maturity",
+        "amount": 34000
+      },
+      {
+        "date": "2033-10-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2033-11-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 138.0275
+      },
+      {
+        "date": "2033-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "coupon",
+        "amount": 133.575
+      },
+      {
+        "date": "2033-12-26",
+        "isin": "RU000A10FQF2",
+        "name": "СФО МОС МСП 2 об. 4",
+        "type": "maturity",
+        "amount": 10000
+      }
+    ],
+    "cashFlowByMonth": [
+      {
+        "month": "2026-09",
+        "amount": 24660.100000000002
+      },
+      {
+        "month": "2026-10",
+        "amount": 12163.64
+      },
+      {
+        "month": "2026-11",
+        "amount": 10442.3275
+      },
+      {
+        "month": "2026-12",
+        "amount": 21133.524999999998
+      },
+      {
+        "month": "2027-01",
+        "amount": 7225.217500000001
+      },
+      {
+        "month": "2027-02",
+        "amount": 5785.1275000000005
+      },
+      {
+        "month": "2027-03",
+        "amount": 20728.870000000003
+      },
+      {
+        "month": "2027-04",
+        "amount": 6830.0175
+      },
+      {
+        "month": "2027-05",
+        "amount": 5384.925
+      },
+      {
+        "month": "2027-06",
+        "amount": 5347.0275
+      },
+      {
+        "month": "2027-07",
+        "amount": 6697.415
+      },
+      {
+        "month": "2027-08",
+        "amount": 5261.227500000001
+      },
+      {
+        "month": "2027-09",
+        "amount": 5273.8775000000005
+      },
+      {
+        "month": "2027-10",
+        "amount": 3516.215
+      },
+      {
+        "month": "2027-11",
+        "amount": 2122.9275000000002
+      },
+      {
+        "month": "2027-12",
+        "amount": 2118.4750000000004
+      },
+      {
+        "month": "2028-01",
+        "amount": 9592.7675
+      },
+      {
+        "month": "2028-02",
+        "amount": 929.7275000000001
+      },
+      {
+        "month": "2028-03",
+        "amount": 3165.0225
+      },
+      {
+        "month": "2028-04",
+        "amount": 8399.5675
+      },
+      {
+        "month": "2028-05",
+        "amount": 1976.2750000000003
+      },
+      {
+        "month": "2028-06",
+        "amount": 1980.7275000000004
+      },
+      {
+        "month": "2028-07",
+        "amount": 8324.015
+      },
+      {
+        "month": "2028-08",
+        "amount": 1909.3275000000003
+      },
+      {
+        "month": "2028-09",
+        "amount": 1909.3275000000003
+      },
+      {
+        "month": "2028-10",
+        "amount": 8252.615
+      },
+      {
+        "month": "2028-11",
+        "amount": 1838.2275000000002
+      },
+      {
+        "month": "2028-12",
+        "amount": 1833.7750000000003
+      },
+      {
+        "month": "2029-01",
+        "amount": 8261.5675
+      },
+      {
+        "month": "2029-02",
+        "amount": 1691.5275000000001
+      },
+      {
+        "month": "2029-03",
+        "amount": 1753.7700000000002
+      },
+      {
+        "month": "2029-04",
+        "amount": 8414.8675
+      },
+      {
+        "month": "2029-05",
+        "amount": 1687.0750000000003
+      },
+      {
+        "month": "2029-06",
+        "amount": 1691.5275000000001
+      },
+      {
+        "month": "2029-07",
+        "amount": 3084.815
+      },
+      {
+        "month": "2029-08",
+        "amount": 1691.5275000000001
+      },
+      {
+        "month": "2029-09",
+        "amount": 1691.5275000000001
+      },
+      {
+        "month": "2029-10",
+        "amount": 3084.815
+      },
+      {
+        "month": "2029-11",
+        "amount": 1691.5275000000001
+      },
+      {
+        "month": "2029-12",
+        "amount": 71687.075
+      },
+      {
+        "month": "2030-01",
+        "amount": 1967.1675
+      },
+      {
+        "month": "2030-02",
+        "amount": 569.4275
+      },
+      {
+        "month": "2030-03",
+        "amount": 556.07
+      },
+      {
+        "month": "2030-04",
+        "amount": 1967.1675
+      },
+      {
+        "month": "2030-05",
+        "amount": 564.975
+      },
+      {
+        "month": "2030-06",
+        "amount": 569.4275
+      },
+      {
+        "month": "2030-07",
+        "amount": 1962.7150000000001
+      },
+      {
+        "month": "2030-08",
+        "amount": 569.4275
+      },
+      {
+        "month": "2030-09",
+        "amount": 569.4275
+      },
+      {
+        "month": "2030-10",
+        "amount": 1962.7150000000001
+      },
+      {
+        "month": "2030-11",
+        "amount": 569.4275
+      },
+      {
+        "month": "2030-12",
+        "amount": 996.375
+      },
+      {
+        "month": "2031-01",
+        "amount": 1967.1675
+      },
+      {
+        "month": "2031-02",
+        "amount": 138.0275
+      },
+      {
+        "month": "2031-03",
+        "amount": 987.47
+      },
+      {
+        "month": "2031-04",
+        "amount": 1967.1675
+      },
+      {
+        "month": "2031-05",
+        "amount": 564.975
+      },
+      {
+        "month": "2031-06",
+        "amount": 569.4275
+      },
+      {
+        "month": "2031-07",
+        "amount": 31962.715
+      },
+      {
+        "month": "2031-08",
+        "amount": 138.0275
+      },
+      {
+        "month": "2031-09",
+        "amount": 138.0275
+      },
+      {
+        "month": "2031-10",
+        "amount": 1531.315
+      },
+      {
+        "month": "2031-11",
+        "amount": 138.0275
+      },
+      {
+        "month": "2031-12",
+        "amount": 133.575
+      },
+      {
+        "month": "2032-01",
+        "amount": 1535.7675
+      },
+      {
+        "month": "2032-02",
+        "amount": 138.0275
+      },
+      {
+        "month": "2032-03",
+        "amount": 129.12249999999997
+      },
+      {
+        "month": "2032-04",
+        "amount": 1535.7675
+      },
+      {
+        "month": "2032-05",
+        "amount": 133.575
+      },
+      {
+        "month": "2032-06",
+        "amount": 138.0275
+      },
+      {
+        "month": "2032-07",
+        "amount": 1531.315
+      },
+      {
+        "month": "2032-08",
+        "amount": 138.0275
+      },
+      {
+        "month": "2032-09",
+        "amount": 138.0275
+      },
+      {
+        "month": "2032-10",
+        "amount": 1531.315
+      },
+      {
+        "month": "2032-11",
+        "amount": 138.0275
+      },
+      {
+        "month": "2032-12",
+        "amount": 133.575
+      },
+      {
+        "month": "2033-01",
+        "amount": 1535.7675
+      },
+      {
+        "month": "2033-02",
+        "amount": 138.0275
+      },
+      {
+        "month": "2033-03",
+        "amount": 124.66999999999999
+      },
+      {
+        "month": "2033-04",
+        "amount": 1535.7675
+      },
+      {
+        "month": "2033-05",
+        "amount": 133.575
+      },
+      {
+        "month": "2033-06",
+        "amount": 138.0275
+      },
+      {
+        "month": "2033-07",
+        "amount": 1531.315
+      },
+      {
+        "month": "2033-08",
+        "amount": 138.0275
+      },
+      {
+        "month": "2033-09",
+        "amount": 138.0275
+      },
+      {
+        "month": "2033-10",
+        "amount": 35531.314999999995
+      },
+      {
+        "month": "2033-11",
+        "amount": 138.0275
+      },
+      {
+        "month": "2033-12",
+        "amount": 10133.575
+      }
+    ]
+  }
+}

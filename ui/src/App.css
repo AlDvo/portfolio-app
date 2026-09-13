@@ -1,0 +1,995 @@
+.app {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* ── Каркас: сайдбар + контент ──────────────────────────── */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Шапка ─────────────────────────────────────────────── */
+
+.topbar {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #dde1e6;
+}
+
+.topbar-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.topbar-meta {
+  color: #5f6b7a;
+}
+
+.topbar-period {
+  margin-left: auto;
+  color: #5f6b7a;
+}
+
+/* ── Карточки показателей ──────────────────────────────── */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  background: #fff;
+  border: 1px solid #e1e6ec;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.summary-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #778493;
+  margin-bottom: 6px;
+}
+
+.summary-value {
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.summary-sub {
+  font-size: 12px;
+  color: #778493;
+  margin-top: 4px;
+}
+
+.tone-up .summary-value {
+  color: #16803c;
+}
+
+.tone-down .summary-value {
+  color: #c0392b;
+}
+
+/* ── Общие карточки ────────────────────────────────────── */
+
+.card {
+  background: #fff;
+  border: 1px solid #e1e6ec;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.muted {
+  color: #778493;
+}
+
+/* ── Таблица позиций ───────────────────────────────────── */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.positions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.positions-table th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5f6b7a;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e1e6ec;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.positions-table th.num,
+.positions-table td.num {
+  text-align: right;
+}
+
+.positions-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eef1f4;
+  white-space: nowrap;
+}
+
+.positions-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.name-cell {
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sort-mark {
+  color: #44598f;
+}
+
+.pos {
+  color: #16803c;
+}
+
+.neg {
+  color: #c0392b;
+}
+
+/* ── Бейджи статусов ───────────────────────────────────── */
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.badge-ok {
+  background: #e6f4ea;
+  color: #16803c;
+}
+
+.badge-assumption {
+  background: #fdf3d5;
+  color: #9a6700;
+}
+
+.badge-nodata {
+  background: #eef1f4;
+  color: #5f6b7a;
+}
+
+.badge-delisted {
+  background: #fde8e8;
+  color: #c0392b;
+}
+
+.badge-notfound {
+  background: #f3d5d5;
+  color: #7b241c;
+}
+
+/* ── Панели: график + выплаты ──────────────────────────── */
+
+.panels {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Бар-чарт ──────────────────────────────────────────── */
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 190px;
+  overflow-x: auto;
+  padding-top: 8px;
+}
+
+.chart-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-width: 22px;
+  flex: 1 1 0;
+}
+
+.chart-bar-wrap {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  flex: 1;
+}
+
+.chart-bar {
+  width: 100%;
+  background: #4a7dbd;
+  border-radius: 3px 3px 0 0;
+  min-height: 2px;
+}
+
+.chart-col:hover .chart-bar {
+  background: #2f5f9e;
+}
+
+.chart-label {
+  font-size: 10px;
+  color: #778493;
+  margin-top: 6px;
+  white-space: nowrap;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+
+/* ── Ближайшие выплаты ─────────────────────────────────── */
+
+.payouts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.payout:last-child {
+  border-bottom: none;
+}
+
+.payout-type {
+  flex: 0 0 78px;
+  font-size: 12px;
+  color: #5f6b7a;
+}
+
+.type-coupon::before {
+  content: '●';
+  color: #4a7dbd;
+  margin-right: 4px;
+  font-size: 9px;
+}
+
+.type-amortization::before {
+  content: '●';
+  color: #7f8c99;
+  margin-right: 4px;
+  font-size: 9px;
+}
+
+.type-maturity::before {
+  content: '●';
+  color: #1d5c8f;
+  margin-right: 4px;
+  font-size: 9px;
+}
+
+.type-dividend::before {
+  content: '●';
+  color: #16803c;
+  margin-right: 4px;
+  font-size: 9px;
+}
+
+.payout-date {
+  color: #5f6b7a;
+  font-variant-numeric: tabular-nums;
+}
+
+.payout-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.payout-amount {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Предупреждения ────────────────────────────────────── */
+
+.warnings {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.warning:last-child {
+  border-bottom: none;
+}
+
+.warning-name {
+  font-weight: 500;
+}
+
+.warning-msg {
+  color: #5f6b7a;
+}
+
+/* ── Загрузка / ошибка ─────────────────────────────────── */
+
+.loading {
+  padding: 60px 0;
+  text-align: center;
+  color: #778493;
+}
+
+.error-box {
+  max-width: 640px;
+  margin: 40px auto;
+  background: #fff;
+  border: 1px solid #f3d5d5;
+  border-radius: 10px;
+  padding: 24px;
+  color: #7b241c;
+}
+
+.error-box pre {
+  background: #f8fafc;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  overflow-x: auto;
+}
+
+.error-hint {
+  margin-top: 16px;
+}
+
+/* ── Панель периода ────────────────────────────────────── */
+
+.card-sub {
+  margin: 0 0 8px;
+  font-size: 12px;
+}
+
+.range-card {
+  padding: 10px 18px;
+  margin-bottom: 16px;
+}
+
+.range-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.range-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #778493;
+  margin-right: 2px;
+}
+
+.range-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #5f6b7a;
+}
+
+.range-field input[type='date'] {
+  font: inherit;
+  padding: 4px 8px;
+  border: 1px solid #d5dbe2;
+  border-radius: 6px;
+  background: #fff;
+  color: #1f2933;
+}
+
+.range-field input[type='date']:focus {
+  outline: none;
+  border-color: #4a7dbd;
+  box-shadow: 0 0 0 2px rgba(74, 125, 189, 0.15);
+}
+
+.range-reset {
+  font: inherit;
+  font-size: 13px;
+  padding: 4px 12px;
+  border: 1px solid #d5dbe2;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #44598f;
+  cursor: pointer;
+}
+
+.range-reset:hover {
+  background: #eef2f8;
+}
+
+.range-note {
+  margin-left: auto;
+  font-size: 12px;
+  color: #778493;
+  white-space: nowrap;
+}
+
+/* ── Выбранный столбец графика ─────────────────────────── */
+
+.chart-col {
+  cursor: pointer;
+}
+
+.chart-col.selected .chart-bar,
+.chart-col:hover .chart-bar {
+  background: #1d5c8f;
+}
+
+.chart-col.selected .chart-label {
+  color: #1d5c8f;
+  font-weight: 600;
+}
+
+/* ── Модальный попап ───────────────────────────────────── */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.28);
+  width: 100%;
+  max-width: 560px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.modal-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.modal-count {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #778493;
+}
+
+.modal-close {
+  font: inherit;
+  font-size: 20px;
+  line-height: 1;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: #f2f4f7;
+  color: #5f6b7a;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #e4e8ee;
+}
+
+.modal-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 18px;
+  overflow-y: auto;
+}
+
+.modal-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.modal-row:last-child {
+  border-bottom: none;
+}
+
+.modal-total {
+  padding: 12px 18px;
+  border-top: 1px solid #eef1f4;
+  background: #f8fafc;
+  font-size: 13px;
+  color: #5f6b7a;
+}
+
+.modal-total strong {
+  color: #1f2933;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Экран выбора файла ─────────────────────────────────── */
+
+.upload-screen {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.upload-heading {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.upload-sub {
+  color: #5f6b7a;
+  margin: 0 0 28px;
+  max-width: 560px;
+}
+
+.upload-zone {
+  width: min(560px, 100%);
+  border: 2px dashed #c3cad4;
+  border-radius: 14px;
+  padding: 44px 24px;
+  cursor: pointer;
+  background: #fff;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.upload-zone:hover,
+.upload-zone.drag {
+  border-color: #4f7ddb;
+  background: #f5f8ff;
+}
+
+.upload-zone.busy {
+  cursor: wait;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.upload-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: #eef3ff;
+  color: #2f5fc8;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.upload-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.upload-hint {
+  font-size: 13px;
+  color: #778493;
+}
+
+.upload-error {
+  margin-top: 18px;
+  max-width: 560px;
+  text-align: left;
+}
+
+.demo-button {
+  margin-top: 22px;
+  font: inherit;
+  font-size: 14px;
+  padding: 9px 18px;
+  border: 1px solid #c3cad4;
+  border-radius: 8px;
+  background: #fff;
+  color: #3d4b5c;
+  cursor: pointer;
+}
+
+.demo-button:hover:not(:disabled) {
+  border-color: #4f7ddb;
+  color: #2f5fc8;
+}
+
+.demo-button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+/* ── Экран прогресса ────────────────────────────────────── */
+
+.loading-progress {
+  max-width: 560px;
+  margin: 15vh auto 0;
+  text-align: center;
+}
+
+.loading-progress h1 {
+  font-size: 20px;
+  margin: 0 0 24px;
+}
+
+.progress-track {
+  height: 10px;
+  border-radius: 6px;
+  background: #e4e8ee;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #4f7ddb, #6a9df0);
+  transition: width 0.2s ease;
+}
+
+.progress-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #5f6b7a;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Кнопка смены файла в шапке дашборда ───────────────── */
+
+.swap-button {
+  margin-left: auto;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 1px solid #c3cad4;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.swap-button:hover {
+  border-color: #4f7ddb;
+  color: #2f5fc8;
+  background: #f5f8ff;
+}
+
+/* ── Сайдбар ────────────────────────────────────────────── */
+
+.sidebar {
+  width: 216px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 10px;
+  background: #fff;
+  border-right: 1px solid #e1e6ec;
+  transition: width 0.18s ease;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 56px;
+}
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #5f6b7a;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sidebar-toggle:hover {
+  background: #f2f4f7;
+}
+
+.sidebar-toggle-icon {
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sidebar-toggle-label {
+  transition: opacity 0.15s;
+}
+
+.sidebar.collapsed .sidebar-toggle-label {
+  opacity: 0;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #3d4b5c;
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sidebar-item:hover {
+  background: #f2f4f7;
+}
+
+.sidebar-item.active {
+  background: #eaf1fd;
+  color: #2f5fc8;
+  font-weight: 600;
+}
+
+.sidebar-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-icon svg {
+  display: block;
+}
+
+.sidebar-label {
+  transition: opacity 0.15s;
+}
+
+.sidebar.collapsed .sidebar-label {
+  opacity: 0;
+}
+
+/* ── Табы портфелей ─────────────────────────────────────── */
+
+.tabs-bar {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  margin: 14px auto 0;
+  padding: 0 20px;
+}
+
+.report-tab {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid #dde1e6;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.report-tab.active {
+  border-color: #4a7dbd;
+  box-shadow: 0 0 0 2px rgba(74, 125, 189, 0.15);
+}
+
+.report-tab-main {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3d4b5c;
+  padding: 7px 4px 7px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.report-tab.active .report-tab-main {
+  color: #1d5c8f;
+}
+
+.report-tab-close {
+  font: inherit;
+  font-size: 14px;
+  line-height: 1;
+  color: #778493;
+  padding: 0 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.report-tab-close:hover {
+  color: #c0392b;
+}
+
+.report-tab-add {
+  font: inherit;
+  font-size: 13px;
+  color: #44598f;
+  padding: 7px 14px;
+  border: 1px dashed #c3cad4;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.report-tab-add:hover {
+  border-color: #4f7ddb;
+  color: #2f5fc8;
+  background: #f5f8ff;
+}
+
+/* ── Баннер ошибки ──────────────────────────────────────── */
+
+.error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 1240px;
+  margin: 12px auto 0;
+  padding: 10px 14px;
+  background: #fdf3f3;
+  border: 1px solid #f3d5d5;
+  border-radius: 10px;
+  color: #7b241c;
+  font-size: 13px;
+}
+
+.error-banner-close {
+  font: inherit;
+  font-size: 16px;
+  line-height: 1;
+  color: #7b241c;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.error-banner-close:hover {
+  background: #f3d5d5;
+}
+
+/* ── Тултип заголовков таблицы ──────────────────────────── */
+
+.col-hint {
+  position: fixed;
+  z-index: 60;
+  transform: translateX(-50%);
+  max-width: 300px;
+  background: #1f2933;
+  color: #f2f4f7;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.28);
+  pointer-events: none;
+  white-space: normal;
+}
+
+.col-hint-title {
+  display: block;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sidebar {
+    transition: width 0.18s ease;
+  }
+}

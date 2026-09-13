@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# Build artifacts
+out/
+ui/dist/
+
+# Logs
+*.log
+
+# Local tooling
+.codegraph/
+.omo/
+.playwright-mcp/
+
+# Broker reports with personal data
+*.xlsx
