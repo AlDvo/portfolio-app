@@ -2,8 +2,15 @@ import { useMemo, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { buildBondRatingPrompt } from './bondRatingPrompt';
-import { autoRatingAvailable, requestRating, ratingEndpoint, setAccessToken } from './ratingApi';
-import type { RatingSource } from './ratingApi';
+import { autoRatingAvailable, requestRating, ratingEndpoint, setAccessToken, RatingError } from './ratingApi';
+import type { RatingErrorKind, RatingSource } from './ratingApi';
+
+const ERROR_TITLES: Record<RatingErrorKind, string> = {
+  quota: 'Дневной лимит Google исчерпан',
+  auth: 'Не удалось войти — проверьте токен',
+  network: 'Worker недоступен',
+  server: 'Ошибка на стороне сервиса',
+};
 
 /** Сколько символов показывать в превью промпта. */
 const PREVIEW_LIMIT = 120_000;
@@ -18,7 +25,7 @@ export function BondRatingPage() {
   const [answer, setAnswer] = useState('');
   const [copyState, setCopyState] = useState<'idle' | 'copied' | 'failed'>('idle');
   const [queryError, setQueryError] = useState<string | null>(null);
-  const [autoError, setAutoError] = useState<string | null>(null);
+  const [autoError, setAutoError] = useState<RatingError | null>(null);
   const [loading, setLoading] = useState(false);
   const [sources, setSources] = useState<RatingSource[]>([]);
   const [model, setModel] = useState<string | undefined>(undefined);
@@ -63,7 +70,9 @@ export function BondRatingPage() {
       setModel(result.model);
       setFromAuto(true);
     } catch (e) {
-      setAutoError(e instanceof Error ? e.message : String(e));
+      setAutoError(
+        e instanceof RatingError ? e : new RatingError('server', String(e)),
+      );
     } finally {
       setLoading(false);
     }
@@ -104,7 +113,18 @@ export function BondRatingPage() {
               Worker'а). Токен здесь не поможет — используйте ручной режим ниже.
             </div>
           )}
-          {autoError && <div className="error-banner">{autoError}</div>}
+          {autoError && (
+            <div
+              className={
+                autoError.kind === 'quota' ? 'quota-banner' : 'error-banner'
+              }
+            >
+              <div>
+                <div className="banner-title">{ERROR_TITLES[autoError.kind]}</div>
+                <div className="banner-detail">{autoError.message}</div>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="rating-step">

@@ -7,6 +7,29 @@
 
 const CONFIGURED_ENDPOINT = import.meta.env.VITE_RATING_API_URL?.trim() ?? '';
 
+/**
+ * Причина сбоя отделена от текста: «упёрлись в лимит», «неверный токен» и «Worker
+ * недоступен» требуют от пользователя разных действий, а раньше приходилось читать
+ * сообщение и гадать.
+ */
+export type RatingErrorKind = 'quota' | 'auth' | 'network' | 'server';
+
+export class RatingError extends Error {
+  readonly kind: RatingErrorKind;
+
+  constructor(kind: RatingErrorKind, message: string) {
+    super(message);
+    this.name = 'RatingError';
+    this.kind = kind;
+  }
+}
+
+function kindForStatus(status: number): RatingErrorKind {
+  if (status === 429) return 'quota';
+  if (status === 401 || status === 403) return 'auth';
+  return 'server';
+}
+
 export interface RatingSource {
   title: string;
   uri: string;
@@ -58,18 +81,26 @@ async function readError(response: Response): Promise<string> {
 }
 
 export async function requestRating(prompt: string): Promise<RatingResult> {
-  const response = await fetch(ratingEndpoint, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${accessToken}`,
-    },
-    body: JSON.stringify({ prompt }),
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-  });
+  let response: Response;
+  try {
+    response = await fetch(ratingEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${accessToken}`,
+      },
+      body: JSON.stringify({ prompt }),
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+    });
+  } catch (e) {
+    if (e instanceof DOMException && e.name === 'TimeoutError') {
+      throw new RatingError('network', 'Gemini не ответил за 5 минут.');
+    }
+    throw new RatingError('network', 'Не удалось соединиться с Worker.');
+  }
 
   if (!response.ok) {
-    throw new Error(await readError(response));
+    throw new RatingError(kindForStatus(response.status), await readError(response));
   }
 
   const data = (await response.json()) as Partial<RatingResult>;

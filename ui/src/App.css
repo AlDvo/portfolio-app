@@ -942,8 +942,31 @@
   background: #fdf3f3;
   border: 1px solid #f3d5d5;
   border-radius: 10px;
-  color: #7b241c;
+color: #7b241c;
   font-size: 13px;
+}
+
+/* Квота — не поломка: жёлтым, чтобы не искать причину чтением текста. */
+.quota-banner {
+  display: flex;
+  gap: 12px;
+  max-width: 1240px;
+  margin: 12px auto 0;
+  padding: 10px 14px;
+  background: #fdf8ec;
+  border: 1px solid #efdfae;
+  border-radius: 10px;
+  color: #6b4e07;
+  font-size: 13px;
+}
+
+.banner-title {
+  font-weight: 600;
+}
+
+.banner-detail {
+  margin-top: 3px;
+  line-height: 1.45;
 }
 
 .error-banner-close {
