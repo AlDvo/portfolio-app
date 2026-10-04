@@ -1,25 +1,12 @@
 import type { CashFlowEvent, CouponEvent, OfzPoint, PortfolioMetrics, PositionCost, PositionMetrics, PositionRow, SecurityData } from './types.js';
+import { isPast, isoDate, yearsBetween, DAY_MS } from './utils.js';
 
-const DAY = 86400000;
+const DAY = DAY_MS;
 const YEAR = 365 * DAY;
 
 // ── Утилиты времени ────────────────────────────────────────
 
-function daysBetween(a: Date, b: Date): number {
-  return (b.getTime() - a.getTime()) / DAY;
-}
 
-function yearsBetween(a: Date, b: Date): number {
-  return daysBetween(a, b) / 365;
-}
-
-function isPast(d: Date, ref: Date): boolean {
-  return d.getTime() < ref.getTime();
-}
-
-function isoDate(d: Date): string {
-  return d.toISOString().slice(0, 10);
-}
 
 // ── Денежные потоки облигации ─────────────────────────────
 

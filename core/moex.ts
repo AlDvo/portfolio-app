@@ -1,8 +1,10 @@
 import type { CouponEvent, OfzPoint, SecurityData } from './types.js';
+import { DAY_MS, delay, safeNum } from './utils.js';
 
 const ISS_BASE = 'https://iss.moex.com/iss';
-const UA = { 'User-Agent': 'portfolio-calc/0.1' };
-const DAY = 86400000;
+const ISS_UA = { 'User-Agent': 'portfolio-calc/0.1' };
+const OFZ_PAGE = 100;
+const OFZ_DELAY_MS = 150;
 
 // ── Ключевая ставка ЦБ ─────────────────────────────────────
 // Флоатеры без известных купонов: MOEX даёт только COUPON_BENCHMARK (RREFKEYR = КС)
@@ -25,7 +27,7 @@ let keyRatePromise: Promise<number | null> | null = null;
 export function fetchKeyRatePct(url: string = CBR_KEY_RATE_URL): Promise<number | null> {
   keyRatePromise ??= (async () => {
     try {
-      const r = await fetch(url, { headers: UA });
+      const r = await fetch(url, { headers: ISS_UA });
       if (!r.ok) return null;
       return parseKeyRateHtml(await r.text());
     } catch {
@@ -51,7 +53,7 @@ export function synthesizeFloatCoupons(
     if (c.value > 0) return c;
     let days: number | null = null;
     if (c.periodStart) {
-      const d = Math.round((c.date.getTime() - c.periodStart.getTime()) / DAY);
+      const d = Math.round((c.date.getTime() - c.periodStart.getTime()) / DAY_MS);
       if (d > 0) days = d;
     }
     if (days === null && freqPerYear > 0) days = 365 / freqPerYear;
@@ -61,6 +63,13 @@ export function synthesizeFloatCoupons(
     return { ...c, value, type: 'float' };
   });
 }
+
+interface IssBlock {
+  columns: string[];
+  data: unknown[][];
+}
+type IssRow = Record<string, unknown>;
+type DescRowMap = Record<string, string>;
 
 const cache = new Map<string, Promise<any>>();
 
@@ -72,25 +81,31 @@ function issUrl(path: string, params: Record<string, string | number> = {}): str
 
 function iss(path: string, params: Record<string, string | number> = {}): Promise<any> {
   const url = issUrl(path, params);
-  if (!cache.has(url)) {
-    cache.set(url, fetch(url, { headers: UA }).then((r) => r.json()));
-  }
-  return cache.get(url)!;
+  let p = cache.get(url);
+  if (p) return p;
+  p = fetch(url, { headers: ISS_UA })
+    .then((r) => r.json())
+    .catch((e) => {
+      cache.delete(url);
+      throw e;
+    });
+  cache.set(url, p);
+  return p;
 }
 
 /** Превращает блок {columns, data} в массив объектов. */
-function rowsOf(json: any, block: string): Record<string, unknown>[] {
-  const b = json[block];
+function rowsOf(json: Record<string, any>, block: string): IssRow[] {
+  const b = json[block] as IssBlock | undefined;
   if (!b || !Array.isArray(b.data)) return [];
   const cols: string[] = b.columns;
   return b.data.map((r: unknown[]) => Object.fromEntries(cols.map((c, i) => [c, r[i]])));
 }
 
 /** Превращает description-блок {columns:[name,title,value,...], data} в map name→value. */
-function kvOf(json: any, block: string): Record<string, string> {
-  const b = json[block];
+function kvOf(json: Record<string, any>, block: string): DescRowMap {
+  const b = json[block] as IssBlock | undefined;
   if (!b || !Array.isArray(b.data)) return {};
-  const out: Record<string, string> = {};
+  const out: DescRowMap = {};
   for (const r of b.data) {
     if (r.length >= 3 && r[0] != null) out[String(r[0])] = String(r[2]);
   }
@@ -98,9 +113,7 @@ function kvOf(json: any, block: string): Record<string, string> {
 }
 
 function num(v: unknown): number {
-  if (v == null || v === '') return 0;
-  const n = typeof v === 'number' ? v : parseFloat(String(v).replace(',', '.'));
-  return Number.isFinite(n) ? n : 0;
+  return safeNum(v);
 }
 
 function toDate(v: unknown): Date | null {
@@ -176,48 +189,73 @@ export async function loadSecurity(isin: string, opts: { keyRatePct?: number } =
   let accruedInt = 0;
   let tradingStatus = '';
 
-  // description (KV) — есть у большинства бумаг, кроме некоторых паёв
-  try {
-    const d = await iss(`/securities/${secid}.json`, { 'iss.meta': 'off' });
-    desc = kvOf(d, 'description');
-  } catch {
-    /* нет описания — не критично */
+  const tasks: Array<Promise<any>> = [];
+  tasks.push(iss(`/securities/${secid}.json`, { 'iss.meta': 'off' })); // desc
+
+  if (stype === 'bond') {
+    tasks.push(iss(`/securities/${secid}/bondization.json`, { 'iss.meta': 'off', limit: 100 }));
+  } else {
+    tasks.push(Promise.resolve(null));
   }
 
-  // bondization — купоны и амортизации (у облигаций; у акций/паёв блоки пустые)
-  if (stype === 'bond') {
+  if (ref.board) {
+    const market = marketFor(ref.group);
+    tasks.push(
+      iss(`/engines/stock/markets/${market}/boards/${boardRef(ref.board)}/securities/${secid}.json`, { 'iss.meta': 'off' }),
+    );
+  } else {
+    tasks.push(Promise.resolve(null));
+  }
+
+  tasks.push(iss(`/securities/${secid}/dividends.json`, { 'iss.meta': 'off' })); // dividends
+
+  const [descRes, bondRes, mdRes, dvRes] = await Promise.allSettled(tasks);
+
+  if (descRes.status === 'fulfilled') {
     try {
-      const b = await iss(`/securities/${secid}/bondization.json`, { 'iss.meta': 'off', limit: 100 });
+      desc = kvOf(descRes.value as Record<string, any>, 'description');
+    } catch {
+      desc = {};
+    }
+  } else {
+    desc = {};
+  }
+
+  if (bondRes.status === 'fulfilled' && bondRes.value) {
+    try {
+      const b = bondRes.value as Record<string, any>;
       coupons = rowsOf(b, 'coupons');
       amortizations = rowsOf(b, 'amortizations');
       offers = rowsOf(b, 'offers');
     } catch {
-      /* нет bondization */
+      /* ignore */
     }
   }
 
-  // рыночные данные: LAST/TRADINGSTATUS из marketdata, ACCRUEDINT из securities-блока
-  try {
-    const market = marketFor(ref.group);
-    const board = ref.board;
-    if (board) {
-      const md = await iss(`/engines/stock/markets/${market}/boards/${board}/securities/${secid}.json`, { 'iss.meta': 'off' });
+  if (mdRes.status === 'fulfilled' && mdRes.value && ref.board) {
+    try {
+      const md = mdRes.value as Record<string, any>;
       const mdRow = rowsOf(md, 'marketdata')[0] ?? {};
       const secRow = rowsOf(md, 'securities')[0] ?? {};
       lastPrice = num(mdRow.LAST ?? secRow.LAST);
       accruedInt = num(secRow.ACCRUEDINT ?? mdRow.ACCRUEDINT);
       tradingStatus = String(mdRow.TRADINGSTATUS ?? secRow.TRADINGSTATUS ?? '');
+    } catch {
+      /* ignore */
     }
-  } catch {
-    /* нет рыночных данных */
   }
 
-  // дивиденды (блок может отсутствовать в некоторых данных ISS)
-  try {
-    const dv = await iss(`/securities/${secid}/dividends.json`, { 'iss.meta': 'off' });
-    dividends = rowsOf(dv, 'dividends');
-  } catch {
-    /* нет дивидендов */
+  if (dvRes.status === 'fulfilled' && dvRes.value) {
+    try {
+      const dv = dvRes.value as Record<string, any>;
+      dividends = rowsOf(dv, 'dividends');
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function boardRef(board: string): string {
+    return board;
   }
 
   const couponEvents: CouponEvent[] = coupons.map((c) => {
@@ -295,17 +333,16 @@ export async function loadSecurity(isin: string, opts: { keyRatePct?: number } =
 /** Кривая ОФЗ (TQOB, RUB): dюрация (дней→лет) → эффективная доходность %. */
 export async function loadOfzCurve(): Promise<OfzPoint[]> {
   const points: OfzPoint[] = [];
-  const PAGE = 100;
-  for (let start = 0; ; start += PAGE) {
+  for (let start = 0; ; start += OFZ_PAGE) {
     const json = await iss('/engines/stock/markets/bonds/boards/TQOB/securities.json', {
       'iss.meta': 'off',
       'iss.only': 'securities,marketdata',
-      limit: PAGE,
+      limit: OFZ_PAGE,
       start,
     });
-    const secs = rowsOf(json, 'securities');
+    const secs = rowsOf(json as Record<string, any>, 'securities');
     if (!secs.length) break;
-    const mds = rowsOf(json, 'marketdata');
+    const mds = rowsOf(json as Record<string, any>, 'marketdata');
     const mdBySecid = new Map(mds.map((m) => [String(m.SECID), m]));
     for (const s of secs) {
       const shortname = String(s.SHORTNAME ?? '');
@@ -325,8 +362,8 @@ export async function loadOfzCurve(): Promise<OfzPoint[]> {
         ytm,
       });
     }
-    if (secs.length < PAGE) break;
-    await new Promise((r) => setTimeout(r, 150));
+    if (secs.length < OFZ_PAGE) break;
+    await delay(OFZ_DELAY_MS);
   }
   points.sort((a, b) => a.durationYears - b.durationYears);
   return points;
