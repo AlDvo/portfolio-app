@@ -1,12 +1,8 @@
 import type { CashFlowEvent } from './types';
 import { FLOW_LABEL } from './types';
+import { formatDateRu } from './format';
 
 const money = (n: number): string => n.toLocaleString('ru-RU', { maximumFractionDigits: 0 });
-
-const dateLabel = (iso: string): string => {
-  const [y, m, d] = iso.split('-');
-  return `${d}.${m}.${y}`;
-};
 
 export function PayoutsList({ events }: { events: CashFlowEvent[] }) {
   const next = events.slice(0, 15);
@@ -21,7 +17,7 @@ export function PayoutsList({ events }: { events: CashFlowEvent[] }) {
           {next.map((e, i) => (
             <li key={i} className="payout">
               <span className={`payout-type type-${e.type}`}>{FLOW_LABEL[e.type]}</span>
-              <span className="payout-date">{dateLabel(e.date)}</span>
+              <span className="payout-date">{formatDateRu(e.date)}</span>
               <span className="payout-name" title={e.name}>
                 {e.name}
               </span>

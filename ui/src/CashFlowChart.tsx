@@ -1,13 +1,9 @@
 import { useEffect, useMemo } from 'react';
 import type { CashFlowByMonth, CashFlowEvent } from './types';
 import { FLOW_LABEL } from './types';
+import { formatDateRu } from './format';
 
 const RUB = (n: number): string => n.toLocaleString('ru-RU', { maximumFractionDigits: 0 });
-
-const dateLabel = (iso: string): string => {
-  const [y, m, d] = iso.split('-');
-  return `${d}.${m}.${y}`;
-};
 
 const monthLabel = (month: string): string => {
   const [y, m] = month.split('-').map(Number);
@@ -16,6 +12,7 @@ const monthLabel = (month: string): string => {
 
 interface Props {
   byMonth: CashFlowByMonth[];
+  /** Уже отфильтрован вызывающей стороной (диапазон дат и флаг амортизации). */
   events: CashFlowEvent[];
   selectedMonth: string | null;
   onSelectMonth: (month: string | null) => void;
@@ -62,7 +59,7 @@ export function CashFlowChart({ byMonth, events, selectedMonth, onSelectMonth }:
               <div className="chart-bar-wrap">
                 <div className="chart-bar" style={{ height: `${Math.max(2, (m.amount / max) * 100)}%` }} />
               </div>
-              <div className="chart-label">{m.month.slice(2)}</div>
+              <div className="chart-label">{m.month.slice(5) + '.' + m.month.slice(0, 4)}</div>
             </div>
           ))}
         </div>
@@ -91,7 +88,7 @@ export function CashFlowChart({ byMonth, events, selectedMonth, onSelectMonth }:
                   {selectedEvents.map((e, i) => (
                     <li key={i} className="modal-row">
                       <span className={`payout-type type-${e.type}`}>{FLOW_LABEL[e.type]}</span>
-                      <span className="payout-date">{dateLabel(e.date)}</span>
+                      <span className="payout-date">{formatDateRu(e.date)}</span>
                       <span className="payout-name" title={e.name}>
                         {e.name}
                       </span>
