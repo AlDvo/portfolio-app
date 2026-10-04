@@ -29,6 +29,8 @@ jobs:
         working-directory: ui
       - run: npm run build
         working-directory: ui
+        env:
+          VITE_RATING_API_URL: ${{ vars.VITE_RATING_API_URL }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
