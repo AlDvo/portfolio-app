@@ -24,6 +24,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: () => '/hd_base/KeyRate/?UniDbQuery.Posted=True',
       },
+      // Локальный `wrangler dev` из папки worker/.
+      '/api/rating': {
+        target: 'http://localhost:8787',
+        changeOrigin: true,
+      },
     },
   },
   preview: {
@@ -33,6 +38,8 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: () => '/hd_base/KeyRate/?UniDbQuery.Posted=True',
       },
+      // В preview автоматического режима нет: прод собирается с
+      // VITE_RATING_API_URL, а здесь доступен только ручной.
     },
   },
 })

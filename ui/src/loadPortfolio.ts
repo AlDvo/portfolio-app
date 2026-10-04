@@ -13,7 +13,7 @@ export interface LoadProgress {
   name: string;
 }
 
-const delay = (ms: number) => new Promise((r) => setTimeout(r, ms));
+import { delay } from '../../core/utils.js';
 
 /** Ключевая ставка ЦБ: через Vite-proxy /cbr-keyrate (cbr.ru без CORS), иначе резерв. */
 const resolveKeyRatePct = async () =>
@@ -27,18 +27,31 @@ const resolveKeyRatePct = async () =>
 export async function loadPortfolioFromFile(
   file: File,
   onProgress: (p: LoadProgress) => void,
-): Promise<{ meta: PortfolioMeta; portfolio: Portfolio }> {
+): Promise<{ meta: PortfolioMeta; portfolio: Portfolio; inputs: PositionInput[]; ofzCurve: any[] }> {
   const wb = XLSX.read(await file.arrayBuffer(), { type: 'array' });
   const { meta, positions, costs } = parseBrokerReport(wb);
 
   const keyRatePct = await resolveKeyRatePct();
   const costByIsin = new Map(costs.map((c) => [c.isin, c]));
   const inputs: PositionInput[] = [];
-  for (const [i, p] of positions.entries()) {
-    onProgress({ loaded: i, total: positions.length, name: p.name });
-    const security = await loadSecurity(p.isin, { keyRatePct });
-    inputs.push({ row: p, cost: costByIsin.get(p.isin), security, ofzCurve: [] });
-    await delay(120); // пауза между запросами к ISS
+  let loaded = 0;
+  const concurrency = 3;
+  for (let i = 0; i < positions.length; i += concurrency) {
+    const chunk = positions.slice(i, i + concurrency);
+    const results = await Promise.all(
+      chunk.map(async (p, idx) => {
+        const security = await loadSecurity(p.isin, { keyRatePct });
+        return { index: i + idx, p, security };
+      }),
+    );
+    for (const r of results) {
+      inputs.push({ row: r.p, cost: costByIsin.get(r.p.isin), security: r.security, ofzCurve: [] });
+      loaded++;
+      onProgress({ loaded, total: positions.length, name: r.p.name });
+    }
+    if (i + concurrency < positions.length) {
+      await delay(120);
+    }
   }
 
   onProgress({ loaded: positions.length, total: positions.length, name: 'кривая ОФЗ' });
@@ -46,5 +59,5 @@ export async function loadPortfolioFromFile(
   for (const input of inputs) input.ofzCurve = ofzCurve;
 
   const portfolio = calculatePortfolio(inputs);
-  return { meta, portfolio };
+  return { meta, portfolio, inputs, ofzCurve };
 }
