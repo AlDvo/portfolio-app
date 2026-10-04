@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
 
 interface NavItem {
@@ -19,11 +19,29 @@ const NAV_ITEMS: NavItem[] = [
       </svg>
     ),
   },
+  {
+    id: 'bond-rating',
+    label: 'Оценка облигации/эмитента',
+    icon: (
+      <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+        <circle cx="10" cy="7" r="3" fill="currentColor" />
+        <path d="M3 17c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" strokeWidth="2" fill="none" />
+      </svg>
+    ),
+  },
 ];
 
 export function Sidebar() {
   const [collapsed, setCollapsed] = useState(() => localStorage.getItem('sidebar-collapsed') === '1');
   const [active, setActive] = useState('valuation');
+
+  useEffect(() => {
+    const handler = (e: any) => {
+      if (e.detail?.id) setActive(e.detail.id);
+    };
+    window.addEventListener('nav-change', handler);
+    return () => window.removeEventListener('nav-change', handler);
+  }, []);
 
   const toggle = () => {
     const next = !collapsed;
@@ -50,7 +68,10 @@ export function Sidebar() {
             <button
               type="button"
               className={`sidebar-item${item.id === active ? ' active' : ''}`}
-              onClick={() => setActive(item.id)}
+              onClick={() => {
+                setActive(item.id);
+                window.dispatchEvent(new CustomEvent('nav-change', { detail: { id: item.id } }));
+              }}
               title={item.label}
             >
               <span className="sidebar-icon" aria-hidden="true">
