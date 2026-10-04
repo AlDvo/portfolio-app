@@ -1141,3 +1141,217 @@ color: #7b241c;
 .rating-sources li {
   overflow-wrap: anywhere;
 }
+
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 10px 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Мобильная адаптация. Вид не меняем — перестраиваем только раскладку.
+   До 900px сайдбар уезжает наверх, дальше телефон получает отдельные
+   правила: две колонки карточек вместо одной, таблица с закреплённым
+   именем, крупные цели нажатия.
+   ═══════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .app-main {
+    width: 100%;
+  }
+
+  /* Grid-элемент по умолчанию не уже своего контента: `.chart` с 12 месяцами
+     распирает трек, и весь документ становится шире экрана. */
+  .panels > *,
+  .summary-grid > * {
+    min-width: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-right: none;
+    border-bottom: 1px solid #e1e6ec;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebar-item {
+    width: auto;
+    white-space: nowrap;
+    padding: 10px 14px;
+  }
+
+  .sidebar.collapsed .sidebar-label {
+    display: none;
+  }
+
+  .sidebar.collapsed .sidebar-item {
+    justify-content: center;
+  }
+
+  .sidebar-toggle {
+    flex-shrink: 0;
+  }
+
+  .topbar-period {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* На телефоне раскладка в одну колонку, но карточки — по две в ряд:
+   одна колонка растягивает стоимость на весь экран и уводит
+   остальные показатели за пределы первого экрана. */
+@media (max-width: 560px) {
+  .app {
+    padding: 14px 12px 32px;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .summary-card {
+    padding: 10px 12px;
+  }
+
+  .summary-value {
+    font-size: 17px;
+  }
+
+  .topbar-title {
+    font-size: 18px;
+  }
+
+  .range-controls,
+  .range-field,
+  .rating-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rating-input,
+  .rating-textarea {
+    width: 100%;
+    /* 16px иначе iOS Safari зумит страницу при фокусе на поле */
+    font-size: 16px;
+  }
+
+  .tabs-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 12px;
+  }
+
+  .report-tab {
+    flex-shrink: 0;
+  }
+
+  /* Имя позиции остаётся на экране, пока листают цифры вправо. */
+  .table-wrap {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .positions-table th:first-child,
+  .positions-table td:first-child {
+    position: sticky;
+    left: 0;
+    background: #fff;
+    box-shadow: 1px 0 0 #e1e6ec;
+  }
+
+  .positions-table thead th:first-child {
+    background: #f6f6f7;
+    z-index: 1;
+  }
+
+  .positions-table tbody tr:hover td:first-child {
+    background: #f7f9fc;
+  }
+
+  .chart {
+    height: 150px;
+  }
+
+  .chart-col {
+    min-width: 18px;
+  }
+
+  .chart-label {
+    font-size: 9px;
+  }
+
+  .modal {
+    max-height: 88vh;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .rating-report h1 {
+    font-size: 17px;
+  }
+
+  .rating-report h2 {
+    font-size: 15px;
+  }
+
+  .rating-report h3 {
+    font-size: 14px;
+  }
+}
+
+/* На тач-экране нет наведения: отклик даёт только нажатие. */
+@media (hover: none) {
+  .sidebar-item:active,
+  .chart-col:active .chart-bar,
+  .modal-close:active {
+    background: #eef2f8;
+  }
+
+  .positions-table tbody tr:active td {
+    background: #f7f9fc;
+  }
+
+  .upload-zone:active {
+    border-color: #2f5fc8;
+    background: #f5f8ff;
+  }
+}
+
+/* Палец вместо мыши: увеличиваем цели нажатия до рекомендованных 40px. */
+@media (pointer: coarse) {
+  .sidebar-item,
+  .sidebar-toggle,
+  .report-tab-add,
+  .modal-close {
+    min-height: 40px;
+  }
+
+  .chart-col {
+    min-height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar {
+    transition: none;
+  }
+}

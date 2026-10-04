@@ -3,7 +3,21 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { buildBondRatingPrompt } from './bondRatingPrompt';
 import { autoRatingAvailable, requestRating, ratingEndpoint, setAccessToken, RatingError } from './ratingApi';
+import type { ComponentProps } from 'react';
+import type { ExtraProps } from 'react-markdown';
 import type { RatingErrorKind, RatingSource } from './ratingApi';
+
+/**
+ * Таблицы §20 шире экрана телефона, а `display:block` на самой `<table>` ломает
+ * выравнивание колонок. Поэтому каждая таблица получает собственный скролл-контейнер.
+ */
+const MARKDOWN_COMPONENTS = {
+  table: ({ node: _node, ...props }: ComponentProps<'table'> & ExtraProps) => (
+    <div className="table-scroll">
+      <table {...props} />
+    </div>
+  ),
+};
 
 const ERROR_TITLES: Record<RatingErrorKind, string> = {
   quota: 'Дневной лимит Google исчерпан',
@@ -203,7 +217,9 @@ export function BondRatingPage() {
               </details>
             )}
             <div className="rating-report">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{answer}</ReactMarkdown>
+              <ReactMarkdown remarkPlugins={[remarkGfm]} components={MARKDOWN_COMPONENTS}>
+                {answer}
+              </ReactMarkdown>
             </div>
           </div>
         )}
