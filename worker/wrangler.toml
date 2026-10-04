@@ -1,0 +1,16 @@
+name = "portfolio-rating-worker"
+main = "src/index.ts"
+compatibility_date = "2025-02-01"
+
+# Gemini не тарифицируется через платформу Cloudflare: ключ передаётся из secret.
+# wrangler secret put GEMINI_API_KEY
+
+[vars]
+# Grounding на бесплатном тарифе Gemini доступен только для Flash/Flash-Lite.
+GEMINI_MODEL = "gemini-3.8-flash"
+# Список через запятую. Укажите origin вашего GitHub Pages, чтобы прокси
+# не превращался в открытый релей на чужой API-ключ.
+ALLOWED_ORIGINS = "http://localhost:5173,https://aldvo.github.io"
+
+[observability]
+enabled = true

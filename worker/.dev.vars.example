@@ -1,0 +1,5 @@
+# Локальная разработка: скопируйте в .dev.vars и подставьте свой ключ.
+# .dev.vars в .gitignore — не коммитьте.
+#
+# Ключ бесплатный, карта не нужна: https://aistudio.google.com/apikey
+GEMINI_API_KEY=ваш-ключ-сюда
