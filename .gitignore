@@ -13,5 +13,12 @@ ui/dist/
 .omo/
 .playwright-mcp/
 
+# Cloudflare Worker secrets (GEMINI_API_KEY lives here)
+.dev.vars
+worker/.dev.vars
+worker/.wrangler/
+worker/dist-check/
+worker/test-prompt.json
+
 # Broker reports with personal data
 *.xlsx
