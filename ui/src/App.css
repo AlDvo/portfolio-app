@@ -1296,8 +1296,28 @@ color: #7b241c;
     min-width: 18px;
   }
 
+  /* Не уменьшаем подпись ниже десктопных 10px: на телефоне она и так мелкая,
+     а 9px превращается в нечитаемую полосу. */
   .chart-label {
-    font-size: 9px;
+    font-size: 10px;
+  }
+
+  /* На телефоне «АйДи Коллект 06» не влезает в одну строку и молча
+     превращалось в «АйДи Коллект…» — имя эмитента должно читаться полностью. */
+  .payout {
+    flex-wrap: wrap;
+  }
+
+  .payout-type {
+    flex: 0 0 68px;
+  }
+
+  .payout-name {
+    flex: 1 1 100%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
   }
 
   .modal {
